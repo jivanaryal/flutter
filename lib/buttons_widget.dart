@@ -52,12 +52,14 @@ class _ButtonWidgetState extends State<ButtonWidget> {
               print("this is container");
             },
             child: Container(
-              height: 40,
-              width: 100,
+              margin: EdgeInsets.all(20),
+              height: 200,
+              width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png")),
+                        "https://www.adventurewhitemountain.com/uploads/img/1611741076-mardi-himal-trekking.jpg"),
+                    fit: BoxFit.cover),
                 boxShadow: [
                   BoxShadow(
                       spreadRadius: 3,
@@ -76,6 +78,23 @@ class _ButtonWidgetState extends State<ButtonWidget> {
                   color: Colors.black,
                   width: 2.0,
                 ),
+              ),
+              child: Text(
+                "Hello World",
+                style: TextStyle(
+                    fontSize: 30, fontFamily: AutofillHints.addressCity),
+              ),
+            ),
+          ),
+          Card(
+            elevation: 18.0,
+            color: Colors.yellow,
+            child: Container(
+              height: 150,
+              child: Text(
+                "this is new font family hahaha",
+                style: TextStyle(
+                    fontFamily: "Whisper", fontSize: 30, color: Colors.red),
               ),
             ),
           )
