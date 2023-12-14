@@ -55,6 +55,18 @@ class _ButtonWidgetState extends State<ButtonWidget> {
               height: 40,
               width: 100,
               decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: NetworkImage(
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png")),
+                boxShadow: [
+                  BoxShadow(
+                      spreadRadius: 3,
+                      color: Colors.red,
+                      blurRadius: 7,
+                      offset: Offset(2, 6)),
+                  BoxShadow(
+                      color: Colors.blue, blurRadius: 7, offset: Offset(2, -5))
+                ],
                 gradient: LinearGradient(
                     begin: Alignment.topRight,
                     end: Alignment.bottomRight,
